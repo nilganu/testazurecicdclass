@@ -5,7 +5,7 @@ const PORT = 8080;
 app.use(express.json());
 
 app.get("/",(req,res)=>{
-    res.send("Welcome to node azure cicd");
+    res.send("Welcome to node azure cicd!!");
 });
 app.get("/about",(req,res)=>{
     res.json({
