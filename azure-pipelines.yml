@@ -22,11 +22,11 @@ steps:
 - script: |
     mkdir -p $(Build.ArtifactStagingDirectory)
     cp -R ./* $(Build.ArtifactStagingDirectory)
-  displayName: 'Copy files to artifact staging directory'
+  displayName: 'Copy files to Artifect staging Directory'
 
-- task: PublishBuildArtifacts@1   
+- task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-  displayName: 'Publish build Artifacts'
+  displayName: 'Publish build Artifacts'  
